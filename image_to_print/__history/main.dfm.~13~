@@ -1,0 +1,43 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = #1055#1077#1095#1072#1090#1100' '#1080#1079#1086#1073#1088#1072#1078#1077#1085#1080#1081
+  ClientHeight = 468
+  ClientWidth = 476
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  OnActivate = OnPaint
+  OnPaint = OnPaint
+  PixelsPerInch = 96
+  TextHeight = 13
+  object OpenImageBtn: TButton
+    Left = 328
+    Top = 361
+    Width = 129
+    Height = 33
+    Caption = #1054#1090#1082#1088#1099#1090#1100' '#1080#1079#1086#1073#1088#1072#1078#1077#1085#1080#1077
+    TabOrder = 0
+    OnClick = OpenImageBtnClick
+  end
+  object PrintImageBtn: TButton
+    Left = 328
+    Top = 417
+    Width = 129
+    Height = 33
+    Caption = #1055#1088#1080#1075#1086#1090#1086#1074#1080#1090#1100' '#1082' '#1087#1077#1095#1072#1090#1080
+    TabOrder = 1
+    OnClick = PrintImageBtnClick
+  end
+  object OpenImageDialog: TOpenDialog
+    Left = 328
+    Top = 329
+  end
+end
