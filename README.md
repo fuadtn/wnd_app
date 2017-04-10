@@ -12,8 +12,8 @@
 
 ### usb_control
 
-### usb_list (MFC WinInet)
+#### usb_list (MFC WinInet)
 ![usb_list](/img/usb_list.jpg)
 
-### usb_control (Win32 WinInet)
-![usb_control](/img/usb_control.PNG)
+#### usb_control (Win32 WinInet)
+![usb_control](/img/usb_agent.PNG)
