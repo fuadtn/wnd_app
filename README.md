@@ -12,7 +12,8 @@
 
 ### usb_control
 
-### usb_list
+### usb_list (MFC)
 ![usb_list](/img/usb_list.jpg)
-### usb_control
-![usb_control](/img/usb_control.png)
+
+### usb_control (Win32)
+![usb_control](/img/usb_control.PNG)
