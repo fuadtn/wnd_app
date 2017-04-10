@@ -1,0 +1,29 @@
+"""ServerUSB URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/1.9/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
+Including another URLconf
+    1. Add an import:  from blog import urls as blog_urls
+    2. Import the include() function: from django.conf.urls import url, include
+    3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
+"""
+from django.conf.urls import url
+from django.contrib import admin
+import cUSB.views
+
+
+urlpatterns = (
+    url(r'^autorization/$', cUSB.views.autorization, name='autorization'),
+    url(r'^send-list/$', cUSB.views.send_list, name='send_list'),
+    url(r'^send-event/$', cUSB.views.send_event, name='_send_event'),
+    url(r'^get-list/$', cUSB.views.get_list, name='get_list'),
+    url(r'^admin/'
+        r'', admin.site.urls),
+)
